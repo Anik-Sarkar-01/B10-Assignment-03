@@ -26,6 +26,7 @@
                     colors: {
                         clifford: '#da373d',
                     },
+
                     fontFamily: {
                         manrope: ['Manrope', 'serif'],
                     }
@@ -37,13 +38,83 @@
 </head>
 
 <body class="font-manrope">
-    <header>
-        
+    <header class="max-w-7xl mx-auto">
+        <div class="navbar bg-base-100">
 
+            <!-- navbar logo -->
+            <div class="navbar-start">
+                <div class="flex gap-3 items-center">
+                    <div class="rounded-full bg-lime-400 px-[10px] py-1">
+                        <i class="fa-solid fa-arrow-up-long rotate-45 text-base"></i>
+                    </div>
+                    <a class="text-3xl font-extrabold">Rinterio</a>
+                </div>
+            </div>
+
+            <!-- navbar links -->
+            <div class="navbar-center hidden lg:flex">
+                <ul class="menu menu-horizontal px-1 items-center ">
+                    <li><a class="font-bold">Home</a></li>
+                    <li><a>Services</a></li>
+                    <li><a>Portfolio</a></li>
+                    <li><a>Blogs</a></li>
+                    <li><a>Contact Us</a></li>
+                </ul>
+            </div>
+
+            <!-- navbar buttons -->
+            <div class="navbar-end">
+                <div class="hidden md:block space-x-3">
+                    <i class="fa-solid fa-magnifying-glass rounded-full bg-[#E9E9E9] p-2"></i>
+                    <i class="fa-solid fa-cart-shopping rounded-full bg-[#E9E9E9] p-2"></i>
+                    <a class="btn bg-lime-400 text-xl font-extrabold">Book Consult
+                        <div class="rounded-full bg-black text-white px-[10px] py-[2px]">
+                            <i class="fa-solid fa-arrow-up-long rotate-45 text-base"></i>
+                        </div>
+                    </a>
+                </div>
+
+                <!-- dropdown for small device -->
+                <div class="dropdown">
+                    <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h8m-8 6h16" />
+                        </svg>
+                    </div>
+
+                    <ul tabindex="0"
+                        class="menu menu-sm dropdown-content bg-base-100 right-0 rounded-box z-[1] mt-3 w-52 p-2 shadow">
+                        <li><a>Home</a></li>
+                        <li><a>Services</a></li>
+                        <li><a>Portfolio</a></li>
+                        <li><a>Blogs</a></li>
+                        <li><a>Contact Us</a></li>
+                        <li class="space-y-2">
+                            <i class="fa-solid fa-magnifying-glass rounded-full bg-[#E9E9E9] p-2"></i>
+
+                            <i class="fa-solid fa-cart-shopping rounded-full bg-[#E9E9E9] p-2"></i>
+
+                            <a class="btn bg-lime-400 text-lg font-extrabold">Book Consult
+                                <div class="rounded-full bg-black text-white px-[10px] py-[2px]">
+                                    <i class="fa-solid fa-arrow-up-long rotate-45 text-base"></i>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+
+                </div>
+            </div>
+        </div>
+
+        
     </header>
+
     <main>
 
     </main>
+
     <footer>
 
     </footer>
