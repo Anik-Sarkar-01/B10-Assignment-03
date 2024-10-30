@@ -29,6 +29,10 @@
 
                     fontFamily: {
                         manrope: ['Manrope', 'serif'],
+                    },
+
+                    backgroundImage: {
+                        'discuss-bg': "url('./assets/bg.jpg')",
                     }
                 }
             }
@@ -132,15 +136,17 @@
             </div>
         </div>
         <!-- banner ends -->
+    </header>
 
+    <main>
         <!-- about us starts -->
         <!-- curve arrow image  -->
-        <figure class="relative -left-10 hidden lg:block">
+        <figure class="relative -left-10 hidden lg:block max-w-7xl mx-auto">
             <img class="w-1/12" src="./assets/Vector.png" alt="">
         </figure>
 
         <!-- card content -->
-        <div class="card lg:card-side bg-base-100 gap-8 my-4">
+        <div class="card lg:card-side bg-base-100 gap-8 my-4 max-w-7xl mx-auto">
             <!-- card text -->
             <div class="space-y-7 lg:w-8/12 text-center lg:text-left">
                 <button class="btn bg-white font-bold rounded-3xl"><i
@@ -182,12 +188,13 @@
         <!-- about us ends -->
 
         <!-- work process section starts -->
-        <div class="my-20 space-y-6">
+        <div class="my-20 space-y-6 max-w-7xl mx-auto">
             <div class="text-center space-y-6">
                 <button class="btn bg-white font-bold rounded-3xl">
-                    <i class="fa-solid fa-arrow-up-long rotate-90 text-base px-3"></i> How We Works</button>
+                    <i class="fa-solid fa-arrow-up-long rotate-90 text-base"></i> How We Works</button>
                 <h1 class="text-4xl font-bold">Our Work Process</h1>
-                <p class="w-10/12 lg:w-6/12 mx-auto">The barn house captivates with its blend of rustic charm and modern sophistication, featuring
+                <p class="w-10/12 lg:w-6/12 mx-auto">The barn house captivates with its blend of rustic charm and modern
+                    sophistication, featuring
                     weathered
                     wood, sleek metal accents.</p>
             </div>
@@ -229,15 +236,57 @@
                         <p>The barn house captivates with its blend of rustic charm and modern.</p>
                     </div>
                 </div>
-                
+
             </div>
         </div>
         <!-- work process section ends -->
 
+        <!-- next project discussion section starts -->
 
-    </header>
+        <div class="space-y-6 w-full bg-[url('./assets/bg.jpg')] bg-no-repeat bg-cover bg-center py-20">
+            <div class="text-center space-y-5">
+                <button class="btn bg-lime-200 font-bold rounded-3xl">
+                    <i class="fa-solid fa-arrow-up-long rotate-90 text-base"></i>Let's Connect</button>
+                <h1 class="text-4xl font-bold">Let's Discuss Next Project</h1>
+                <p class="w-10/12 lg:w-6/12 mx-auto">The barn house captivates with its blend of rustic charm and modern
+                    sophistication, featuring weathered wood, sleek metal accents.</p>
+            </div>
 
-    <main>
+            <div class="grid gap-4 max-w-5xl mx-auto ">
+
+                <div class="col-span-2 lg:col-span-1">
+                    <input type="text" placeholder="First Name*" class="input input-bordered w-full rounded-3xl " />
+                </div>
+
+                <div class="col-span-2 lg:col-span-1">
+                    <input type="text" placeholder="Last Name*" class="input input-bordered w-full rounded-3xl" />
+                </div>
+
+                <div class="col-span-2 lg:col-span-1">
+                    <input type="text" placeholder="Phone Number*" class="input input-bordered w-full rounded-3xl" />
+                </div>
+
+                <div class="col-span-2 lg:col-span-1">
+                    <input type="text" placeholder="Email Number*" class="input input-bordered w-full rounded-3xl" />
+                </div>
+
+                <div class="col-span-2">
+                    <textarea placeholder="Write your message here"
+                        class="textarea textarea-bordered textarea-lg w-full h-60 rounded-3xl"></textarea>
+                </div>
+
+
+                <a class="btn rounded-3xl bg-lime-400 text-xl font-extrabold col-span-2">Send Mail
+                    <div class="rounded-full bg-black text-white px-[10px] py-[2px]">
+                        <i class="fa-solid fa-arrow-up-long rotate-45 text-base"></i>
+                    </div>
+                </a>
+
+
+            </div>
+        </div>
+
+        <!-- next project discussion section ends -->
 
     </main>
 
